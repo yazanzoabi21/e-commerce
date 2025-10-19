@@ -1,5 +1,6 @@
-import EditProductPage from "../components/products/editProductList";
+import { redirect } from "next/navigation";
 
-export default function EditProductsRoute({ params }: { params: { id: string } }) {
-  return <EditProductPage params={params} />;
+export default function EditProductsRoute() {
+  // No id provided at /admin/editProduct, redirect to products list
+  redirect("/admin/products");
 }

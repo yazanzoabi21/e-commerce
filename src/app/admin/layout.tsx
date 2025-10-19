@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import AdminLayout from "@/shared/layouts/AdminLayout";
 
 export const metadata = {
   title: "Admin Dashboard - E-Commerce",
@@ -6,5 +7,5 @@ export const metadata = {
 };
 
 export default function AdminRootLayout({ children }: { children: ReactNode }) {
-  return children;
+  return <AdminLayout>{children}</AdminLayout>;
 }

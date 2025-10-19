@@ -1,10 +1,5 @@
-import AdminLayout from "@/app/shared";
-import ProductForm from "@/app/shared/pages/productList/ProductForm";
+import ProductForm from "@/features/products/components/ProductForm";
 
 export default function NewProductRoute() {
-  return (
-    <AdminLayout>
-      <ProductForm />
-    </AdminLayout>
-  );
+  return <ProductForm />;
 }

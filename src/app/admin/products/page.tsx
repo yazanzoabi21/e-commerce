@@ -1,10 +1,5 @@
-import AdminLayout from "@/app/shared";
-import ProductsList from "@/app/shared/pages/productList/ProductsList";
+import ProductsList from "@/features/products/components/ProductsList";
 
 export default function ProductsPage() {
-  return (
-    <AdminLayout>
-      <ProductsList />
-    </AdminLayout>
-  );
+  return <ProductsList />;
 }
